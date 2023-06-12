@@ -43,7 +43,7 @@ EOF
 sudo apt install -y uuid
 FSID=$(uuid)
 
-mkdir -p /etc/ceph
+sudo mkdir -p /etc/ceph
 cat<<EOF | sudo tee /etc/ceph/ceph.conf
 [global]
 fsid = ${FSID}
