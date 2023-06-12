@@ -92,7 +92,6 @@ ceph orch ls
 # Apply ceph components placement
 ceph orch apply mon --placement=label:mon
 ceph orch apply mgr --placement=label:mgr
-ceph orch apply osd --placement=label:mgr
 ```
 
 9. Migrate ceph-osd
